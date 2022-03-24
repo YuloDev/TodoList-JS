@@ -11,42 +11,60 @@
       crossorigin="anonymous"
     />
     <title>Todo List Javascript</title>
-    <style>
-     
-      th,
-      td {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <form class="container" action="">
-      <label for="title">title</label>
-      <input type="text" class="" id="title" />
-      <label for="description">description</label>
-      <input type="text" class="" id="description" />
-      <button class="btn btn-success" id="add">añadir</button>
-    </form>
-    <hr />
-    <table class="container" id="table">
-      <tr>
-        <td>Todo</td>
-        <td>description</td>
-        <td>Completed</td>
-      </tr>
-      <tr>
-        <td>Example</td>
-        <td>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-          harum architecto? Accusantium at ullam, tempora, nihil earum, velit
-          beatae voluptate facilis blanditiis quidem ex labore neque voluptates
-          nulla natus quisquam!
-        </td>
-        <td><input type="checkbox" name="" id="" /></td>
-        <td><button class="btn btn-primary" id="edit">editar</button></td>
-        <td><button class="btn btn-danger" id="delete">borrar</button></td>
-      </tr>
-    </table>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Todo List Javascript</a>
+      </div>
+    </nav>
+    <div class="container">
+      <form class="mt-4 mx-5">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Titulo de la tarea" id="title" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Descripción de la tarea" id="descripcion" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 my-4" id="btn-agregar">Agregar</button>
+      </form>
+    </div>
+
+    <div class="container my-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody id="">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
